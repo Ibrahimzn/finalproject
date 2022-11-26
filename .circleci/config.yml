@@ -48,6 +48,11 @@ jobs:
             npm run api:build
             npm run api:env
             npm run api:zip
+      - run:
+          name: deploy
+          command: |
+            npm run api:deploy
+            npm run frontend:deploy
   # deploy step will run only after manual approval
   deploy:
     docker:
