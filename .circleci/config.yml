@@ -1,10 +1,10 @@
 version: 2.1
 orbs:
-  # orgs contain basc recipes and reproducible actions (install node, aws, etc.)
+  # orbs contain basc recipes and reproducible actions (install node, aws, etc.)
   node: circleci/node@5.0.2
   eb: circleci/aws-elastic-beanstalk@2.0.1
   aws-cli: circleci/aws-cli@3.1.1
-  # different jobs are calles later in the workflows sections
+
 jobs:
   build-deploy:
     docker:
@@ -17,7 +17,7 @@ jobs:
       - eb/setup
       - aws-cli/setup       
       - checkout
-      # Use root level package.json to install dependencies in the frontend app
+      #Installing dependencies in the the frontend #DONE  
       - run:
           name: Install Front-End Dependencies
           command: |
@@ -26,22 +26,22 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
-      # TODO: Install dependencies in the the backend API #DONE       
+      #Installing dependencies in the the backend API #DONE       
       - run:
           name: Install API Dependencies
           command: |
             npm run api:install
-      # TODO: Lint the frontend #DONE
+      #Lint the frontend #DONE
       - run:
           name: Front-End Lint
           command: |
             npm run frontend:lint
-      # TODO: Build the frontend app #DONE
+      #Building the frontend app #DONE
       - run:
           name: Front-End Build
           command: |
             npm run frontend:build
-      # TODO: Build the backend API #DONE   
+      #Building the backend API #DONE   
       - run:
           name: API Build
           command: |
