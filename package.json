@@ -8,8 +8,8 @@
         "frontend:lint": "cd udagram/udagram-frontend && npm run lint",
         "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy",
         "api:install": "cd udagram/udagram-api && npm install .",
-        "api:build": "cd udagram/udagram-api && npm run build",
-        "api:env": "cd udagram/udagram-api && printenv >> www/.env",
+        "api:build": "cd udagram/udagram-api && npm run build && ls",
+        "api:env": "cd udagram/udagram-api && printenv >> www/.env && printenv & ls www/",
         "api:zip": "cd udagram/udagram-api && npm run zip",
         "api:start": "cd udagram/udagram-api && npm run dev",
         "api:deploy": "cd udagram/udagram-api && npm run deploy"
