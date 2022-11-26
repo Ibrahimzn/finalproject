@@ -24,22 +24,22 @@ jobs:
             echo "NPM --version" 
             echo $(npm --version)
             npm run frontend:install
-      # TODO: Install dependencies in the the backend API DONE       
+      # TODO: Install dependencies in the the backend API #DONE       
       - run:
           name: Install API Dependencies
           command: |
             npm run api:install
-      # TODO: Lint the frontend DONE
+      # TODO: Lint the frontend #DONE
       - run:
           name: Front-End Lint
           command: |
             npm run frontend:lint
-      # TODO: Build the frontend app
+      # TODO: Build the frontend app #DONE
       - run:
           name: Front-End Build
           command: |
             npm run frontend:build
-      # TODO: Build the backend API      
+      # TODO: Build the backend API #DONE   
       - run:
           name: API Build
           command: |
@@ -59,7 +59,6 @@ jobs:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
-            echo "# TODO: Install, build, deploy in both apps"
             
 workflows:
   udagram:
