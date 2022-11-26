@@ -22,7 +22,7 @@
 ```
 
 ## Pipeline
-![Screenshot](https://github.com/Ibrahimzn/finalproject/blob/master/docs/digrams/AWSservicesusedforhostingdigram.png?raw=true)
+![Screenshot](https://github.com/Ibrahimzn/finalproject/blob/master/docs/digrams/pipelinedigram.png?raw=true)
 
 ## Infrastructure description
-![Screenshot](https://github.com/Ibrahimzn/finalproject/blob/master/docs/digrams/pipelinedigram.png?raw=true)
+![Screenshot](https://github.com/Ibrahimzn/finalproject/blob/master/docs/digrams/AWSservicesusedforhostingdigram.png?raw=true)
