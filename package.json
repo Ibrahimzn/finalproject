@@ -12,6 +12,6 @@
         "api:env": "cd udagram/udagram-api && printenv >> www/.env && printenv && ls www/ -a",
         "api:zip": "cd udagram/udagram-api && npm run zip && ls www/ -a",
         "api:start": "cd udagram/udagram-api && npm run dev",
-        "api:deploy": "cd udagram/udagram-api && npm run deploy"
+        "api:deploy": "cd udagram/udagram-api && ls -a && ls www/ -a &&npm run deploy"
     }
 }
