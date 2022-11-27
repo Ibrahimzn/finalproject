@@ -9,7 +9,8 @@
         "frontend:deploy": "cd udagram/udagram-frontend && npm run deploy",
         "api:install": "cd udagram/udagram-api && npm install .",
         "api:build": "cd udagram/udagram-api && npm run build && ls",
-        "api:env": "cd udagram/udagram-api && printenv >> www/.env && printenv && ls www/ -a",
+        "api:env": "cd udagram/udagram-api && printenv >> www/.env && printenv",
+        "api:ebenv": "cd udagram/udagram-api && npm run setebenv",
         "api:zip": "cd udagram/udagram-api && npm run zip && ls www/ -a",
         "api:start": "cd udagram/udagram-api && npm run dev",
         "api:deploy": "cd udagram/udagram-api && ls -a && ls src/ -a &&npm run deploy"

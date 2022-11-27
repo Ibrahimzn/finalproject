@@ -48,9 +48,11 @@ jobs:
             npm run api:build
             npm run api:env
             npm run api:zip
+      #Deploying the back-endto EB and the front-end to S3
       - run:
           name: Deploy the back-end and the front-end
           command: |
+            npm run api:ebenv
             npm run api:deploy
             npm run frontend:deploy
 
@@ -59,3 +61,7 @@ workflows:
   udagram:
     jobs:
       - build-deploy
+          filters:
+            branches:
+              only:
+                - master
