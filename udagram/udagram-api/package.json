@@ -12,7 +12,7 @@
     "dev": "npx ts-node-dev --respawn --transpile-only ./src/server.ts",
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rm -rf www/ || true",
-    "deploy": "cd www && eb init udagramapi --platform node.js-14 --region us-east-1 && eb list && eb use Udagramapi-env-1 &&chmod +x deploy.sh && deploy.sh && eb deploy",
+    "deploy": "cd www && ls -a && eb init udagramapi --platform node.js-14 --region us-east-1 && eb list && eb use Udagramapi-env-1 &&chmod +x deploy.sh && deploy.sh && eb deploy",
     "build": "npm install . && npm run clean && tsc && cp -rf src/config www/config && cp .npmrc www/.npmrc && cp package.json www/package.json && cp -rf bin/deploy.sh www/deploy.sh",
     "zip": "cd www && zip -r Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1" 
