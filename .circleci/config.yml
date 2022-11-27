@@ -60,7 +60,7 @@ jobs:
 workflows:
   udagram:
     jobs:
-      - build-deploy
+      - build-deploy:
           filters:
             branches:
               only:
