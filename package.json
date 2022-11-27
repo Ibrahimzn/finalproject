@@ -12,6 +12,7 @@
         "api:env": "cd udagram/udagram-api && printenv >> www/.env && printenv",
         "api:zip": "cd udagram/udagram-api && npm run zip && ls www/ -a",
         "api:start": "cd udagram/udagram-api && npm run dev",
-        "api:deploy": "cd udagram/udagram-api && ls -a && ls src/ -a &&npm run deploy"
+        "api:deploy": "cd udagram/udagram-api && npm run deploy",
+        "set:env": "chmod +x bin/deploy.sh && bin/deploy.sh"
     }
 }
