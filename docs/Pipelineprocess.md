@@ -11,8 +11,7 @@
 - npm run api:build - to build the backend code
 - npm run api:env - to export the ENV to the build folder
 - npm run api:zip - to zip the www folder to then deploy
-- npm run api:ebenv - to set the ENV in the EB service
-- npm run api:deploy - to deploy the backend to the EB service
+- npm run api:deploy - to set the ENV in the EB service and deploy the backend to the EB service
 - npm run frontend:deploy - to deploy the frontend to the S3 service
 ```
 ![Screenshot](https://github.com/Ibrahimzn/finalproject/blob/master/docs/digrams/pipelinedigram.png?raw=true)

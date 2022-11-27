@@ -52,7 +52,6 @@ jobs:
       - run:
           name: Deploy the back-end and the front-end
           command: |
-            npm run api:ebenv
             npm run api:deploy
             npm run frontend:deploy
 
